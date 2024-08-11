@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
+// creating todo schema
+
 const todoSchema = new mongoose.Schema(
 	{
 		title:{
@@ -11,8 +13,9 @@ const todoSchema = new mongoose.Schema(
 			required:true,
 		}
 	}
-)
+);
 
+// exporting schema
 module.exports = mongoose.model("Todo", todoSchema);
 
 
